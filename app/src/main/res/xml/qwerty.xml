@@ -5,7 +5,7 @@
     android:verticalGap="0px"
     android:keyHeight="45dp">
     
-    <!-- Nayi Number Row -->
+    <!-- Row 1: Numbers -->
     <Row>
         <Key android:codes="49" android:keyLabel="1" android:keyEdgeFlags="left"/>
         <Key android:codes="50" android:keyLabel="2"/>
@@ -19,6 +19,7 @@
         <Key android:codes="48" android:keyLabel="0" android:keyEdgeFlags="right"/>
     </Row>
 
+    <!-- Row 2: QWERTY -->
     <Row>
         <Key android:codes="113" android:keyLabel="Q" android:keyEdgeFlags="left"/>
         <Key android:codes="119" android:keyLabel="W"/>
@@ -32,8 +33,9 @@
         <Key android:codes="112" android:keyLabel="P" android:keyEdgeFlags="right"/>
     </Row>
     
+    <!-- Row 3: ASDFGH -->
     <Row>
-        <Key android:codes="97" android:keyLabel="A" android:keyEdgeFlags="left"/>
+        <Key android:codes="97" android:keyLabel="A" android:keyEdgeFlags="left" android:keyWidth="10%p" />
         <Key android:codes="115" android:keyLabel="S"/>
         <Key android:codes="100" android:keyLabel="D"/>
         <Key android:codes="102" android:keyLabel="F"/>
@@ -44,8 +46,9 @@
         <Key android:codes="108" android:keyLabel="L" android:keyEdgeFlags="right"/>
     </Row>
     
+    <!-- Row 4: Shift, ZXCVBNM, aur right side Delete -->
     <Row>
-        <Key android:codes="-5" android:keyLabel="Del" android:keyWidth="15%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="-1" android:keyLabel="⇧" android:keyWidth="15%p" android:keyEdgeFlags="left"/>
         <Key android:codes="122" android:keyLabel="Z"/>
         <Key android:codes="120" android:keyLabel="X"/>
         <Key android:codes="99" android:keyLabel="C"/>
@@ -53,6 +56,15 @@
         <Key android:codes="98" android:keyLabel="B"/>
         <Key android:codes="110" android:keyLabel="N"/>
         <Key android:codes="109" android:keyLabel="M"/>
-        <Key android:codes="32" android:keyLabel="Space" android:keyWidth="15%p" android:keyEdgeFlags="right"/>
+        <Key android:codes="-5" android:keyLabel="⌫" android:keyWidth="15%p" android:keyEdgeFlags="right"/>
+    </Row>
+    
+    <!-- Row 5: Nayi Bottom Row (Symbols, Spacebar, Enter) -->
+    <Row>
+        <Key android:codes="-2" android:keyLabel="!#1" android:keyWidth="15%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="44" android:keyLabel="," android:keyWidth="10%p"/>
+        <Key android:codes="32" android:keyLabel="English (US)" android:keyWidth="40%p"/>
+        <Key android:codes="46" android:keyLabel="." android:keyWidth="10%p"/>
+        <Key android:codes="10" android:keyLabel="↵" android:keyWidth="25%p" android:keyEdgeFlags="right"/>
     </Row>
 </Keyboard>
