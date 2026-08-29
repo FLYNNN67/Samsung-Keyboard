@@ -8,6 +8,6 @@
     android:background="#000000"
     android:keyBackground="@drawable/key_bg"
     android:keyTextColor="#FFFFFF"
-    android:keyTextSize="22sp"
-    android:paddingBottom="8dp"
-    android:paddingTop="8dp" />
+    android:keyTextSize="20sp"
+    android:paddingBottom="4dp"
+    android:paddingTop="4dp" />
