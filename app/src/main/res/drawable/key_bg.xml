@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Jab button press hoga (Halka light grey) -->
     <item android:state_pressed="true">
-        <shape>
-            <solid android:color="#2C2C2E" />
-            <corners android:radius="12dp" />
-        </shape>
+        <inset android:insetLeft="3dp" android:insetRight="3dp" android:insetTop="4dp" android:insetBottom="4dp">
+            <shape>
+                <solid android:color="#2C2C2E" />
+                <corners android:radius="12dp" />
+            </shape>
+        </inset>
     </item>
+    
+    <!-- Normal state (Samsung Dark Grey) -->
     <item>
-        <shape>
-            <solid android:color="#1C1C1E" />
-            <corners android:radius="12dp" />
-        </shape>
+        <inset android:insetLeft="3dp" android:insetRight="3dp" android:insetTop="4dp" android:insetBottom="4dp">
+            <shape>
+                <solid android:color="#1C1C1E" />
+                <corners android:radius="12dp" />
+            </shape>
+        </inset>
     </item>
 </selector>
